@@ -1,4 +1,3 @@
-// Quellen: zusammenarbeit mit Laura Paska
 "use strict";
 var EventsInspector;
 (function (EventsInspector) {
