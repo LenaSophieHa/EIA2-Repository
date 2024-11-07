@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasklist</title>
-    <link rel="stylesheet" href="TaskList.css">
-    <script src="./TaskList.js" defer></script>
+    <link rel="stylesheet" href="Tasklist.css">
+    <script src="./Tasklist.js" defer></script>
 </head>
-
 <body>
     <div class="wrapper">
         <header class="box">
@@ -22,9 +20,7 @@
         <form id="taskForm">
             <input type="text" id="name" placeholder="Name" required>
             <input type="text" id="title" placeholder="Title of Task" required>
-            <label for="creationDate">creation Date:</label>
-            <input type="date" id="creationDate" required>
-            <label for="deadline">deadline:</label>
+            <label for="deadline">Deadline:</label>
             <input type="datetime-local" id="deadline" required>
             <input type="text" id="comment" placeholder="Comment">
             <button type="submit" id="addTaskButton">Add Task</button>

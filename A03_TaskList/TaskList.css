@@ -87,3 +87,9 @@ form {
     background-color: #d4edda; /* Helle grüne Farbe für erledigte Aufgaben */
     text-decoration: line-through; /* Durchgestrichen */
 }
+
+#deleteTask {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}

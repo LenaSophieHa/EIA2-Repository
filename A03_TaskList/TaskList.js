@@ -2,7 +2,6 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Verhindert das Neuladen der Seite
     const name = document.getElementById('name').value;
     const title = document.getElementById('title').value;
-    const creationDate = document.getElementById('creationDate').value;
     const deadline = new Date(document.getElementById('deadline').value);
     const comment = document.getElementById('comment').value;
     const currentDate = new Date();
@@ -26,18 +25,16 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
                 <div class="value">${name}</div>
             </div>
             <div class="attribute-row">
-                <div class="attribute"><strong>deadline:</strong></div>
+                <div class="attribute"><strong>Deadline:</strong></div>
                 <div class="value">${deadline.toLocaleString()}</div>
             </div>
             <div class="attribute-row">
                 <div class="attribute"><strong>Comment:</strong></div>
                 <div class="value">${comment}</div>
             </div>
-            <p class="creation-date"><strong>Created on:</strong> ${creationDate}</p>
         </div>
         <span class="task-status">${deadline < currentDate ? "Expired" : "In Progress"}</span>
-        <i class="fas fa-trash"></i>
-        <i class="fas fa-pen"></i>
+        <button class="delete-task-btn">Delete</button> <!-- Löschbutton -->
     `;
 
     // Event-Listener für die Checkbox
@@ -50,9 +47,22 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
         }
     });
 
+    // Event-Listener für den Löschbutton
+    const deleteButton = taskElement.querySelector('.delete-task-btn');
+    deleteButton.addEventListener('click', function() {
+        taskContainer.removeChild(taskElement); // Entfernt das Task-Element aus dem DOM
+        updateTaskCounter(); // Aktualisiert den Zähler
+    });
+
     taskContainer.appendChild(taskElement);
-    document.getElementById('counterItem').innerText = taskContainer.children.length;
+    updateTaskCounter();
 
     // Eingabefelder zurücksetzen
     this.reset();
 });
+
+// Funktion zur Aktualisierung des Aufgaben-Zählers
+function updateTaskCounter() {
+    const taskContainer = document.getElementById('taskContainer');
+    document.getElementById('counterItem').innerText = taskContainer.children.length;
+}
