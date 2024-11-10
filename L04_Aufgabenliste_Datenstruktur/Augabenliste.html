@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasklist</title>
+    <link rel="stylesheet" href="Aufgabenliste.css">
+    <script src="./Aufgabenliste.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="box">
+            <h1>Tasklist</h1>
+        </header>
+        <h2 class="text">
+            <span id="counterItem">0</span> in total
+        </h2>
+
+        <form id="taskForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="title" placeholder="Title of Task" required>
+            <label for="deadline">Deadline:</label>
+            <input type="datetime-local" id="deadline" required>
+            <input type="text" id="comment" placeholder="Comment">
+            <button type="submit" id="addTaskButton">Add Task</button>
+        </form>
+
+        <div id="taskContainer"></div>
+    </div>
+</body>
+</html>

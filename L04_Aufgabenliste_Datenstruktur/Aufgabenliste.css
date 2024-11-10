@@ -1,0 +1,95 @@
+body {
+    background-image: url(./Background.jpg);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(251, 251, 251);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    height: 100px;
+    margin: 0;
+    padding-top: 60px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    background-color: rgb(240, 180, 240);
+    border: solid black;
+    width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: rgb(238, 103, 195);
+    padding: 10px;
+}
+
+#counterItem {
+    color: rgb(99, 37, 191);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#taskContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container {
+    background-color: white;
+    padding: 8px;
+    font-size: 0.9em;
+    border: solid 1px rgb(99, 99, 99);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.attribute-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.container.expired {
+    background-color: #ffdddd;
+}
+
+.container.in-progress {
+    background-color: #ddffdd;
+}
+
+.creation-date {
+    font-size: 0.75em;
+    color: grey;
+}
+
+.container.completed {
+    background-color: #d4edda; /* Helle grüne Farbe für erledigte Aufgaben */
+    text-decoration: line-through; /* Durchgestrichen */
+}
+
+#deleteTask {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
