@@ -1,0 +1,124 @@
+body {
+    background-image: url(./Background.jpg);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: rgb(251, 251, 251);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    height: 100px;
+    margin: 0;
+    padding-top: 60px;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(99, 37, 191);
+}
+
+
+.wrapper {
+    position: relative;
+    background-color: rgb(240, 180, 240);
+    border: solid black;
+    width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+.box {
+    background-color: rgb(238, 103, 195);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#counterItem {
+    color: rgb(99, 37, 191);
+    font-weight: bold;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+#taskContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.task-item {
+    background-color: white;
+    padding: 8px;
+    font-size: 0.9em;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Aufgabe "Abgelaufen" - roter Rahmen */
+.task-item.expired {
+    border-color: red;
+    background-color: #ffdddd;
+}
+
+/* Aufgabe "In Bearbeitung" - grüner Rahmen */
+.task-item.in-progress {
+    border-color: green;
+    background-color: #ddffdd;
+}
+
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.attribute-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.task-item.completed {
+    background-color: #d4edda; 
+    text-decoration: line-through; 
+    opacity: 0.8;
+}
+
+
+.task-status {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-top: 5px;
+}
+
+
+#deleteTask {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+
+.creation-date {
+    font-size: 0.75em;
+    color: grey;
+}

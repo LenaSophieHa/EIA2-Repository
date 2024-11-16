@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Kevin",
+        "title": "Einkaufen gehen",
+        "deadline": "2024-11-30T00:00:00",  
+        "comment": "Kauf Eier und Milch",
+        "completed": false
+    },
+    {
+        "name": "Bernd",
+        "title": "Dusche putzen",
+        "deadline": "2022-11-01T00:00:00",  
+        "comment": "Auch den Abfluss",
+        "completed": false
+    }
+]
