@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasklist</title>
+    <link rel="stylesheet" href="Server.css">
+    <script src="https://kit.fontawesome.com/4287d81834.js" crossorigin="anonymous"></script>
+    <script src="./Server.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <header class="box">
+            <h1>Tasklist</h1>
+        </header>
+
+       
+        <h2 class="text">
+            <span id="counterItem">0</span> in total
+        </h2>
+
+        
+        <form id="taskForm" method="get">
+            
+            <input id="name" type="text" placeholder="Name" required>
+
+           
+            <input id="title" type="text" placeholder="Title of Task" required>
+
+            
+            <label for="deadline">Deadline:</label>
+            <input id="deadline" type="datetime-local" required>
+
+            
+            <input id="comment" type="text" placeholder="Comment">
+
+            
+            <button id="addTaskButton" type="submit">Add Task</button>
+        </form>
+
+       
+        <div id="taskContainer"></div>
+    </div>
+</body>
+</html>
