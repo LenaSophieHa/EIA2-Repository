@@ -85,13 +85,13 @@ function addItem() {
     };
     createTaskElement(task); // Fügt das neue Task-Element hinzu
     console.log("Neues Item wird zur Liste hinzugefügt");
-    //  Daten an den Server senden
+    // Daten an den Server senden
     sendData(task);
 }
-// Funktion zum Senden der Daten (simuliert)
+// Funktion zum Senden der Daten 
 async function sendData(task) {
     const query = new URLSearchParams(task);
     await fetch("Tasklist.html?" + query.toString());
     alert("Data sent");
 }
-//# sourceMappingURL=Tasklist.js.map
+//# sourceMappingURL=client.js.map

@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background-color: rgb(134, 197, 223);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+canvas {
+    border: solid rgb(32, 54, 54);
+    border-radius: 5px;
+}
+
+h1 {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(29, 79, 65);
+    
+}
+
+button {
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgb(7, 111, 109);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: rgb(255, 192, 203);
+}
