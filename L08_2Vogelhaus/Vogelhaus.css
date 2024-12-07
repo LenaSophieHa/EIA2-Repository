@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1050px) {
+    canvas {
+        width: 100%;
+    }
+    }
+
+body {
+    text-align: center;
+    background-color: rgb(232, 206, 253);
+    color: rgb(143, 155, 235);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+canvas {
+    border: solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
