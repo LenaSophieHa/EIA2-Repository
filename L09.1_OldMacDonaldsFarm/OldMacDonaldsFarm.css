@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(105, 6, 6);
+    }
+
+#inventory{
+
+    font-weight: bold;
+    margin-top: -20px;
+    background-color: rgb(203, 51, 0);
+    border-radius: 5px;
+    width: 105px;
+}
+
+h1{
+
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 115px;
+}
+
+#farm {
+  
+    position: relative;
+    left: 400px;
+    top: 10px;
+
+}
+
+#nextDay{
+
+   position: relative;
+   left: 100px;
+   top: -40px;
+   border-color: rgb(255, 255, 255);
+   background-color: rgb(233, 84, 34);
+   font-weight: bold;
+   
+   
+}
+
+button:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+}
