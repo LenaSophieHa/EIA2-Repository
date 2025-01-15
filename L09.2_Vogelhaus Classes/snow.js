@@ -1,3 +1,4 @@
+"use strict";
 var a09_2_Vogelhaus;
 (function (a09_2_Vogelhaus) {
     class Snowflake {

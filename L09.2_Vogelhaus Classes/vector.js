@@ -1,3 +1,4 @@
+"use strict";
 var a09_2_Vogelhaus;
 (function (a09_2_Vogelhaus) {
     class Vector {
@@ -57,4 +58,4 @@ var a09_2_Vogelhaus;
     }
     a09_2_Vogelhaus.VectorBird = VectorBird;
 })(a09_2_Vogelhaus || (a09_2_Vogelhaus = {}));
-//# sourceMappingURL=Vector.js.map
+//# sourceMappingURL=vector.js.map

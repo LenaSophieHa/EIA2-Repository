@@ -1,3 +1,4 @@
+"use strict";
 var a09_2_Vogelhaus;
 (function (a09_2_Vogelhaus) {
     window.addEventListener("load", handleload);
@@ -26,7 +27,7 @@ var a09_2_Vogelhaus;
         }
         for (let indexbird = 0; indexbird < 17; indexbird++) {
             let randomscale2 = Math.floor(Math.random() * (2 - 0.5) + 0.5);
-            let bird = new a09_2_Vogelhaus.Bird(randomscale2);
+            let bird = new Bird(randomscale2);
             birds.push(bird);
         }
     }
@@ -134,11 +135,11 @@ var a09_2_Vogelhaus;
         crc2.lineTo(-20, 0);
         crc2.lineTo(-13, -10);
         crc2.lineTo(-16, -10);
-        crc2.lineTo(-08, -20);
+        crc2.lineTo(-8, -20);
         crc2.lineTo(-10, -20);
         crc2.lineTo(0, -35);
         crc2.lineTo(10, -20);
-        crc2.lineTo(08, -20);
+        crc2.lineTo(8, -20);
         crc2.lineTo(16, -10);
         crc2.lineTo(13, -10);
         crc2.fillStyle = "darkgreen";
@@ -172,11 +173,11 @@ var a09_2_Vogelhaus;
             crc2.lineTo(-20, 0);
             crc2.lineTo(-13, -10);
             crc2.lineTo(-16, -10);
-            crc2.lineTo(-08, -20);
+            crc2.lineTo(-8, -20);
             crc2.lineTo(-10, -20);
             crc2.lineTo(0, -35);
             crc2.lineTo(10, -20);
-            crc2.lineTo(08, -20);
+            crc2.lineTo(8, -20);
             crc2.lineTo(16, -10);
             crc2.lineTo(13, -10);
             crc2.fillStyle = "darkgreen";
@@ -212,11 +213,11 @@ var a09_2_Vogelhaus;
             crc2.lineTo(-20, 0);
             crc2.lineTo(-13, -10);
             crc2.lineTo(-16, -10);
-            crc2.lineTo(-08, -20);
+            crc2.lineTo(-8, -20);
             crc2.lineTo(-10, -20);
             crc2.lineTo(0, -35);
             crc2.lineTo(10, -20);
-            crc2.lineTo(08, -20);
+            crc2.lineTo(8, -20);
             crc2.lineTo(16, -10);
             crc2.lineTo(13, -10);
             crc2.fillStyle = "darkgreen";
