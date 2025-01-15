@@ -27,7 +27,7 @@ var a09_2_Vogelhaus;
         }
         for (let indexbird = 0; indexbird < 17; indexbird++) {
             let randomscale2 = Math.floor(Math.random() * (2 - 0.5) + 0.5);
-            let bird = new Bird(randomscale2);
+            let bird = new a09_2_Vogelhaus.Bird(randomscale2);
             birds.push(bird);
         }
     }
